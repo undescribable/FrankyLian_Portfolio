@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franky Lian | Mechanical Engineering Portfolio</title>
+  <meta name="description" content="Engineering portfolio of Franky Lian, Mechanical Engineering at The Ohio State University.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="#top">Franky Lian</a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Mechanical Engineering Portfolio</p>
+      <h1>Franky Lian</h1>
+      <p class="lead">Bachelor of Science in Mechanical Engineering, The Ohio State University. Expected graduation December 19, 2027.</p>
+      <p class="sub">Design, simulation, and manufacturing, from CAD and simulation through prototyping, testing, and validation.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#projects">View projects</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <img class="headshot" src="assets/img/headshot.jpg" alt="Portrait of Franky Lian">
+  </section>
+
+  <section id="about" class="section">
+    <h2>About</h2>
+    <p>I am a mechanical engineering student at The Ohio State University working across industry and research. My work spans mechanical design of consumer products, casting simulation and porosity prediction, and hands-on machining and testing.</p>
+    <div class="chips">
+      <span>SOLIDWORKS</span>
+      <span>ANSYS</span>
+      <span>MAGMASOFT</span>
+      <span>PolyWorks 3D Scanning</span>
+      <span>GD&amp;T</span>
+      <span>DFM</span>
+      <span>Machining</span>
+      <span>Arduino / Embedded Control</span>
+      <span>Python / Machine Learning</span>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+
+    <article class="card">
+      <header class="card-head">
+        <div>
+          <h3>GE Appliances, a Haier company</h3>
+          <p class="meta">Mechanical engineering projects</p>
+        </div>
+        <p class="meta">Aug 2025 – Nov 2025 &amp; Jul 2026</p>
+      </header>
+
+      <div class="subproject">
+        <h4>Suspension System Design (Aug – Nov 2025)</h4>
+        <ul>
+          <li>Designed suspension components using machine element principles and factor-of-safety analysis.</li>
+          <li>Produced drawings and schematics with GD&amp;T for manufacturing and assembly.</li>
+          <li>Evaluated spring placement and load paths to optimize tub-to-spring interaction.</li>
+          <li><strong>Result:</strong> Completed the design phase with a theoretical factor of safety above 2, and established suspension geometry meeting required operating conditions.</li>
+        </ul>
+        <h4>Dynamic Balancing</h4>
+        <ul>
+          <li>Calculated counterweight mass, density, and placement to achieve the required center of gravity and tilt angle.</li>
+          <li><strong>Result:</strong> Achieved consistent centroid placement relative to the center of rotation across all models.</li>
+        </ul>
+      </div>
+
+      <div class="subproject">
+        <h4>Bracket Misalignment at Assembly (Jul 2026)</h4>
+        <p>A pilot dishwasher build hit a no-build condition caused by a deformed bracket retaining a critical component. I performed the dimensional and tolerance stack-up analysis to find the root cause and prevent recurrence.</p>
+        <ul>
+          <li>Scanned a random sample of 15 parts and compared them to nominal CAD using PolyWorks 3D scan-to-CAD, checking datums, surface profiles, perpendicularity, and concentricity.</li>
+          <li>Presented scan and tolerance data in a simplified engineering review to communicate the failure mechanism.</li>
+          <li><strong>Result:</strong> Drawing revisions reduced assembly failures from 3% to 0.5%, contributing to approximately $150K in savings.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="card">
+      <header class="card-head">
+        <div>
+          <h3>Advanced Casting Research Center, The Ohio State University</h3>
+          <p class="meta">Undergraduate research</p>
+        </div>
+        <p class="meta">Mar 2025 – Present</p>
+      </header>
+      <h4>Casting Simulation &amp; Porosity Prediction</h4>
+      <p>Calibrating MAGMASOFT casting simulations against physical die-casting results to improve confidence in predicted porosity and fluidity, reducing reliance on physical casting trials.</p>
+      <ul>
+        <li>Calibrated simulations against experimental results and troubleshot discrepancies with real-world casting behavior.</li>
+        <li>Built and modified CAD models of molds and internal mold features.</li>
+        <li>Configured and executed gravity casting and high-pressure die casting (HPDC) simulations.</li>
+        <li><strong>Progress:</strong> Generated 30+ metal-casting simulations across multiple material conditions and debugged material-property issues for 13+ material systems. Calibration and validation are ongoing.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <details class="project" open>
+      <summary>
+        <span class="project-title">3D-Printed Centrifugal Compressor</span>
+        <span class="meta">Personal project · Oct 2024 – Jan 2025</span>
+      </summary>
+      <div class="project-body">
+        <p>A personal project to design and test a 3D-printed centrifugal compressor. The impeller was designed parametrically, simulated in ANSYS, and redesigned based on the results.</p>
+        <h4>Parametric modeling in SOLIDWORKS</h4>
+        <ul>
+          <li>Fit the blades within the housing, targeting a 50 mm diameter and 10,000 RPM, with blade geometry dependent on the other blades.</li>
+          <li>Defined blade shape with equation-based splines, varying spline degree and complexity by formula and technique.</li>
+        </ul>
+        <h4>ANSYS simulation feedback</h4>
+        <ul>
+          <li>Calculated volumetric flow rate and visualized vortices and fluid stagnation within the volute.</li>
+          <li>Used results to manipulate design variables and resolve design flaws in the parameterizable model.</li>
+        </ul>
+        <h4>Reflection and results</h4>
+        <ul>
+          <li>Refining the blade equation improved geometric control with minor performance impact.</li>
+          <li>Design constraints identified: zero-thickness geometry, unmanufacturable conditions, and insufficient design constraints.</li>
+          <li>Validated performance with an anemometer. Measured airflow was within ±20% of the predicted 24.55 CFM.</li>
+          <li>Key issues: excessive shaft friction, PLA deformation, dimensional variation, and unintended surface friction from 3D printing.</li>
+          <li><strong>Next steps:</strong> functional tolerancing, material selection for the application, and better drafting techniques (DFM).</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="project">
+      <summary>
+        <span class="project-title">Casting Simulation &amp; Porosity Prediction</span>
+        <span class="meta">Undergraduate research · Mar 2025 – Present</span>
+      </summary>
+      <div class="project-body">
+        <p>Developing a simulation and data workflow that correlates MAGMASOFT results with experimental casting data, evaluates porosity and fluidity across casting conditions, and reduces reliance on physical trials. Ongoing. See the Experience section for details.</p>
+      </div>
+    </details>
+
+    <details class="project">
+      <summary>
+        <span class="project-title">GE Appliances: Suspension System &amp; Dynamic Balancing</span>
+        <span class="meta">Industry project · Aug 2025 – Nov 2025</span>
+      </summary>
+      <div class="project-body">
+        <p>Designed suspension components and balancing counterweights to control vibration and keep the tub within its required operating position. See the Experience section for details.</p>
+      </div>
+    </details>
+
+    <details class="project">
+      <summary>
+        <span class="project-title">GE Appliances: Bracket Misalignment Root-Cause Analysis</span>
+        <span class="meta">Industry project · Jul 2026</span>
+      </summary>
+      <div class="project-body">
+        <p>Used scan-to-CAD and tolerance stack-up analysis to identify the root cause of a bracket misalignment that caused a no-build condition. See the Experience section for details.</p>
+      </div>
+    </details>
+
+    <details class="project">
+      <summary>
+        <span class="project-title">Air Motor Piston &amp; Cylinder Machining</span>
+        <span class="meta">Class project, ME2900 · Jan 2025 – Feb 2025</span>
+      </summary>
+      <div class="project-body">
+        <ul>
+          <li>Translated engineering drawings and GD&amp;T requirements into physical components.</li>
+          <li>Machined aluminum components on manual mill and lathe, and verified dimensions with precision gauges.</li>
+          <li>Evaluated how datum selection and machining process affect surface finish, geometry, and fit.</li>
+          <li><strong>Result:</strong> Held 0.001 in dimensional tolerance on machined components, then assembled and tested the air motor at 400+ RPM.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="project">
+      <summary>
+        <span class="project-title">Over-Engineered Fan: Integrated Arduino Control</span>
+        <span class="meta">Class project, ME2900 · Jan 2025 – Feb 2025</span>
+      </summary>
+      <div class="project-body">
+        <p>Expanded a basic fan into a remotely configurable system with an Arduino Uno, IR remote, ultrasonic sensor, DC motor, and servo.</p>
+        <ul>
+          <li><strong>Variable speed:</strong> user-defined speed with smooth transitions.</li>
+          <li><strong>Distance-based control:</strong> ultrasonic sensing adjusts fan speed to user distance.</li>
+          <li><strong>Rotation and angle:</strong> forward/reverse rotation and remote positioning from −45° to +45°.</li>
+          <li><strong>Automatic oscillation:</strong> programmed side-to-side motion.</li>
+          <li><strong>Result:</strong> A fully integrated prototype with five distinct control functions, designed in CAD and assembled with electronics.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Open to internships and engineering opportunities. Reach out using the links below.</p>
+    <ul class="contact-list">
+      <li><a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a></li>
+      <li><a href="https://www.linkedin.com/in/YOUR_LINKEDIN">LinkedIn</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p><strong>Confidentiality:</strong> All figures and information presented here have been reviewed and approved by the relevant advisors, assignment leaders, and company managers. The material has been carefully selected and presented at a level that does not disclose confidential, proprietary, or otherwise sensitive company information.</p>
+  <p>&copy; 2026 Franky Lian</p>
+</footer>
+
+</body>
+</html>
