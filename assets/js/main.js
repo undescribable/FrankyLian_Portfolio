@@ -2,15 +2,6 @@
 (function () {
   "use strict";
 
-  // 1. Assemble the email address so it is not sitting in the HTML as plain text.
-  document.querySelectorAll(".email[data-user]").forEach(function (el) {
-    var addr = el.dataset.user + "@" + el.dataset.domain;
-    var a = document.createElement("a");
-    a.href = "mailto:" + addr;
-    a.textContent = addr;
-    el.replaceWith(a);
-  });
-
   // 2. Project filter (home page).
   var filters = document.querySelectorAll(".filter");
   var cards = document.querySelectorAll("#cards .card");

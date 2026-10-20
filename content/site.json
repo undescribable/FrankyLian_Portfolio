@@ -10,16 +10,30 @@
     "linkedin": "https://www.linkedin.com/in/franky-lian",
     "github": "https://github.com/undescribable",
     "resume": "assets/Franky_Lian_Resume.pdf",
-    "email_user": "lianfranky.10",
-    "email_domain": "gmail.com",
     "repo": "https://github.com/undescribable/FrankyLian_Portfolio"
   },
   "confidentiality": "All figures and information presented here have been reviewed and approved by the relevant advisors, assignment leaders, and company managers. The material has been carefully selected and presented at a level that does not disclose confidential, proprietary, or otherwise sensitive company information.",
   "categories": [
-    {"id": "design", "label": "Design", "full": "Mechanical Design & Product Development"},
-    {"id": "quality", "label": "Quality", "full": "Quality Engineering & Failure Analysis"},
-    {"id": "simulation", "label": "Simulation", "full": "Simulation, CFD & Optimization"},
-    {"id": "manufacturing", "label": "Materials & manufacturing", "full": "Materials, Casting & Manufacturing"}
+    {
+      "id": "design",
+      "label": "Design",
+      "full": "Mechanical Design & Product Development"
+    },
+    {
+      "id": "quality",
+      "label": "Quality",
+      "full": "Quality Engineering & Failure Analysis"
+    },
+    {
+      "id": "simulation",
+      "label": "Simulation",
+      "full": "Simulation, CFD & Optimization"
+    },
+    {
+      "id": "manufacturing",
+      "label": "Materials & manufacturing",
+      "full": "Materials, Casting & Manufacturing"
+    }
   ],
   "project_order": [
     "bracket-misalignment",
@@ -46,11 +60,28 @@
       }
     ],
     "titleblock": [
-      ["Part", "Dishwasher retaining bracket"],
-      ["Method", "PolyWorks scan-to-CAD"],
-      ["Callout", "0.035 | A | B | C"],
-      ["As found", "0.183, out of tolerance", "fail"],
-      ["Resolution", "0.017, within tolerance", "pass"]
+      [
+        "Part",
+        "Dishwasher retaining bracket"
+      ],
+      [
+        "Method",
+        "PolyWorks scan-to-CAD"
+      ],
+      [
+        "Callout",
+        "0.035 | A | B | C"
+      ],
+      [
+        "As found",
+        "0.183, out of tolerance",
+        "fail"
+      ],
+      [
+        "Resolution",
+        "0.017, within tolerance",
+        "pass"
+      ]
     ],
     "caption": "Surface-profile check of a bracket against its drawing callout, as found and at resolution. GE Appliances, July 2026.",
     "project": "bracket-misalignment"
@@ -60,19 +91,42 @@
       "n": "01",
       "title": "Design for manufacture",
       "text": "GD&T schemes to ASME Y14.5-2009 for three suspension subsystems, drawings released in Creo, and aluminum parts machined to 0.001 in.",
-      "links": [["washer-suspension", "Suspension design"], ["air-motor-machining", "Air-motor machining"]]
+      "links": [
+        [
+          "washer-suspension",
+          "Suspension design"
+        ],
+        [
+          "air-motor-machining",
+          "Air-motor machining"
+        ]
+      ]
     },
     {
       "n": "02",
       "title": "Inspect and investigate",
       "text": "PolyWorks scan-to-CAD and tolerance stack-ups to trace an assembly failure on dishwasher components, with the evidence presented in an engineering review.",
-      "links": [["bracket-misalignment", "Bracket root-cause analysis"]]
+      "links": [
+        [
+          "bracket-misalignment",
+          "Bracket root-cause analysis"
+        ]
+      ]
     },
     {
       "n": "03",
       "title": "Simulate and validate",
       "text": "STAR-CCM+ and HEEDS design studies at TotalSim, and MAGMASOFT casting simulations calibrated against die-casting data at ACRC.",
-      "links": [["#exp-totalsim-2026", "CFD at TotalSim"], ["casting-simulation", "Casting simulation"]]
+      "links": [
+        [
+          "#exp-totalsim-2026",
+          "CFD at TotalSim"
+        ],
+        [
+          "casting-simulation",
+          "Casting simulation"
+        ]
+      ]
     }
   ],
   "team_projects": [
@@ -80,7 +134,9 @@
       "title": "Liquid Rocket Systems sub-team",
       "org": "Buckeye Space Launch Initiative",
       "dates": "August 2024 – present",
-      "cats": ["design"],
+      "cats": [
+        "design"
+      ],
       "bullets": [
         "Developed a parametric Venturi nozzle in Onshape with configurable geometries to encompass different fasteners and CFD design requirements.",
         "Designed piston and O-ring dimensions for the rocket's aft closure, ensuring proper sealing and fit."
@@ -90,7 +146,9 @@
       "title": "Aerodynamics sub-team",
       "org": "Buckeye Solar Racing",
       "dates": "September 2023 – March 2025",
-      "cats": ["manufacturing"],
+      "cats": [
+        "manufacturing"
+      ],
       "bullets": [
         "Constructed carbon-fiber composite structures such as the aeroshell, baffles, and other aerodynamic components to achieve lightweight and durable builds."
       ]
@@ -108,7 +166,12 @@
         "Collected and analyzed experimental die-casting data to validate simulations and calibrate machine-learning models for casting defect prediction.",
         "Prepared metal samples for electron microscopy and tensile testing to characterize material and casting performance."
       ],
-      "related": [["casting-simulation", "Case study: casting simulation"]]
+      "related": [
+        [
+          "casting-simulation",
+          "Case study: casting simulation"
+        ]
+      ]
     },
     {
       "id": "ge-quality",
@@ -121,7 +184,12 @@
         "Performed hardware evaluations, testing, and engineering validation to support quality and product performance improvements.",
         "Supported root cause investigation of component assembly failures using PolyWorks scan-to-CAD analysis, contributing to drawing revisions that reduced failure rates from 3% to 0.5% and saved approximately $150K."
       ],
-      "related": [["bracket-misalignment", "Case study: bracket misalignment"]]
+      "related": [
+        [
+          "bracket-misalignment",
+          "Case study: bracket misalignment"
+        ]
+      ]
     },
     {
       "id": "totalsim-2026",
@@ -146,7 +214,12 @@
         "Released engineering drawings on Creo and managed part configurations in Windchill PLM for new product development.",
         "Prototyped proofs-of-concept for product challenges, contributing to 4 pending patent applications."
       ],
-      "related": [["washer-suspension", "Case study: suspension design"]]
+      "related": [
+        [
+          "washer-suspension",
+          "Case study: suspension design"
+        ]
+      ]
     },
     {
       "id": "totalsim-2025",
@@ -164,52 +237,132 @@
     {
       "group": "CAD & product design",
       "items": [
-        ["Creo", "Released engineering drawings (GE Appliances)"],
-        ["Siemens NX", "Parameterizable CFD geometry (TotalSim)"],
-        ["SOLIDWORKS", "Certified SOLIDWORKS Professional, June 2026; compressor and fan projects"],
-        ["Onshape", "Parametric Venturi nozzle (Buckeye Space Launch Initiative)"],
-        ["GD&T, ASME Y14.5-2009", "Schemes for 3 suspension subsystems"],
-        ["Tolerance stack-up analysis", "Assembly failure investigation (GE Appliances)"]
+        [
+          "Creo",
+          "Released engineering drawings (GE Appliances)"
+        ],
+        [
+          "Siemens NX",
+          "Parameterizable CFD geometry (TotalSim)"
+        ],
+        [
+          "SOLIDWORKS",
+          "Certified SOLIDWORKS Professional, June 2026; compressor and fan projects"
+        ],
+        [
+          "Onshape",
+          "Parametric Venturi nozzle (Buckeye Space Launch Initiative)"
+        ],
+        [
+          "GD&T, ASME Y14.5-2009",
+          "Schemes for 3 suspension subsystems"
+        ],
+        [
+          "Tolerance stack-up analysis",
+          "Assembly failure investigation (GE Appliances)"
+        ]
       ]
     },
     {
       "group": "Simulation & optimization",
       "items": [
-        ["STAR-CCM+", "CFD setup, meshing, post-processing (TotalSim)"],
-        ["ANSYS Fluent", "Compressor airflow prediction"],
-        ["Siemens HEEDS", "Automated, repeatable CFD design studies (TotalSim)"],
-        ["ANSA", "CAD cleanup and CFD meshing (TotalSim)"],
-        ["MAGMASOFT", "Casting simulation (ACRC)"],
-        ["Machine-learning model calibration", "Casting defect prediction (ACRC)"]
+        [
+          "STAR-CCM+",
+          "CFD setup, meshing, post-processing (TotalSim)"
+        ],
+        [
+          "ANSYS Fluent",
+          "Compressor airflow prediction"
+        ],
+        [
+          "Siemens HEEDS",
+          "Automated, repeatable CFD design studies (TotalSim)"
+        ],
+        [
+          "ANSA",
+          "CAD cleanup and CFD meshing (TotalSim)"
+        ],
+        [
+          "MAGMASOFT",
+          "Casting simulation (ACRC)"
+        ],
+        [
+          "Machine-learning model calibration",
+          "Casting defect prediction (ACRC)"
+        ]
       ],
-      "also": ["Simcenter 3D (listed on resume)"]
+      "also": [
+        "Simcenter 3D (listed on resume)"
+      ]
     },
     {
       "group": "Quality & manufacturing",
       "items": [
-        ["PolyWorks", "3D scan-to-CAD analysis (GE Appliances)"],
-        ["3D scanning and dimensional metrology", "Parts compared against nominal CAD"],
-        ["Root-cause analysis", "Bracket assembly failure (GE Appliances)"],
-        ["Manual lathe and mill", "Air-motor course project (ME2900)"],
-        ["Composite fabrication", "Carbon-fiber aeroshell and baffles (Buckeye Solar Racing)"],
-        ["3D printing in PLA", "Compressor prototype"]
+        [
+          "PolyWorks",
+          "3D scan-to-CAD analysis (GE Appliances)"
+        ],
+        [
+          "3D scanning and dimensional metrology",
+          "Parts compared against nominal CAD"
+        ],
+        [
+          "Root-cause analysis",
+          "Bracket assembly failure (GE Appliances)"
+        ],
+        [
+          "Manual lathe and mill",
+          "Air-motor course project (ME2900)"
+        ],
+        [
+          "Composite fabrication",
+          "Carbon-fiber aeroshell and baffles (Buckeye Solar Racing)"
+        ],
+        [
+          "3D printing in PLA",
+          "Compressor prototype"
+        ]
       ],
-      "also": ["CNC machining (listed on resume)", "PFMEA (listed on resume)"]
+      "also": [
+        "CNC machining (listed on resume)",
+        "PFMEA (listed on resume)"
+      ]
     },
     {
       "group": "Programming & automation",
       "items": [
-        ["Java", "HEEDS automation (TotalSim)"],
-        ["Arduino", "Five-function fan controller (ME2900)"]
+        [
+          "Java",
+          "HEEDS automation (TotalSim)"
+        ],
+        [
+          "Arduino",
+          "Five-function fan controller (ME2900)"
+        ]
       ],
-      "also": ["Python", "MATLAB", "Simulink", "C++", "Linux (listed on resume)"]
+      "also": [
+        "Python",
+        "MATLAB",
+        "Simulink",
+        "C++",
+        "Linux (listed on resume)"
+      ]
     },
     {
       "group": "PLM & engineering workflow",
       "items": [
-        ["Windchill PLM", "Managed part configurations (GE Appliances)"],
-        ["Engineering drawing release", "Creo drawings for new product development"],
-        ["Technical specifications", "For 3 suspension subsystems"]
+        [
+          "Windchill PLM",
+          "Managed part configurations (GE Appliances)"
+        ],
+        [
+          "Engineering drawing release",
+          "Creo drawings for new product development"
+        ],
+        [
+          "Technical specifications",
+          "For 3 suspension subsystems"
+        ]
       ]
     }
   ],

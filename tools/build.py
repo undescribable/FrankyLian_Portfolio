@@ -385,7 +385,6 @@ def build_home():
     out.append(f"""<section class="section" id="contact" aria-labelledby="contact-h"><div class="wrap">
   {sec_head("06", "Contact", SITE['contact_text'], "contact-h")}
   <ul class="contact-list">
-    <li><span class="mono">Email</span><span class="email" data-user="{esc(em['email_user'])}" data-domain="{esc(em['email_domain'])}">{esc(em['email_user'])} [at] {esc(em['email_domain'].replace('.', ' [dot] '))}</span></li>
     <li><span class="mono">LinkedIn</span><a href="{esc(em['linkedin'])}" rel="noopener">{esc(em['linkedin'].replace('https://www.', ''))}</a></li>
     <li><span class="mono">GitHub</span><a href="{esc(em['github'])}" rel="noopener">{esc(em['github'].replace('https://', ''))}</a></li>
     <li><span class="mono">Resume</span><a href="{root}{em['resume']}" target="_blank" rel="noopener">Download PDF</a></li>
