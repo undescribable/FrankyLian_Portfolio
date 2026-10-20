@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casting simulation and porosity prediction | Franky Lian</title>
+<meta name="description" content="Casting simulation is cheap but low fidelity; CT scanning of cast parts is high fidelity but expensive. This research ties the two together. Ongoing.">
+<link rel="canonical" href="https://undescribable.github.io/FrankyLian_Portfolio/projects/casting-simulation.html">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f4f3ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#101315" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Franky Lian">
+<meta property="og:title" content="Casting simulation and porosity prediction">
+<meta property="og:description" content="Casting simulation is cheap but low fidelity; CT scanning of cast parts is high fidelity but expensive. This research ties the two together. Ongoing.">
+<meta property="og:url" content="https://undescribable.github.io/FrankyLian_Portfolio/projects/casting-simulation.html">
+<meta property="og:image" content="https://undescribable.github.io/FrankyLian_Portfolio/assets/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Franky Lian, mechanical engineering portfolio">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/ibm-plex-sans-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/main.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Franky Lian", "url": "https://undescribable.github.io/FrankyLian_Portfolio/", "image": "https://undescribable.github.io/FrankyLian_Portfolio/assets/img/portrait.webp", "jobTitle": "Mechanical engineering student", "affiliation": {"@type": "CollegeOrUniversity", "name": "The Ohio State University"}, "sameAs": ["https://www.linkedin.com/in/franky-lian", "https://github.com/undescribable"]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">FL</span><span>Franky Lian</span></a>
+    <nav aria-label="Primary"><a href="../index.html#work">Work</a><a href="../index.html#experience">Experience</a><a href="../index.html#skills">Skills</a><a href="../index.html#about">About</a><a href="../index.html#contact">Contact</a><a class="nav-resume" href="../assets/Franky_Lian_Resume.pdf" target="_blank" rel="noopener">Resume</a></nav>
+  </div>
+</header>
+<main id="main"><article class="case">
+  <header class="case-head"><div class="wrap">
+    <p class="crumbs mono"><a href="../index.html#work">Work</a> / Simulation, CFD &amp; Optimization, Materials, Casting &amp; Manufacturing</p>
+    <h1>Casting simulation and porosity prediction</h1>
+    <p class="dek">Casting simulation is cheap but low fidelity; CT scanning of cast parts is high fidelity but expensive. This research ties the two together. Ongoing.</p>
+    <dl class="facts"><div><dt>Organization</dt><dd>Advanced Casting Research Center, The Ohio State University</dd></div><div><dt>Role</dt><dd>Undergraduate Research Assistant</dd></div><div><dt>Dates</dt><dd>March 2026 – present</dd></div><div><dt>Status</dt><dd>Ongoing</dd></div><div><dt>Category</dt><dd>Simulation, CFD &amp; Optimization, Materials, Casting &amp; Manufacturing</dd></div></dl>
+  </div></header>
+  <div class="wrap case-wrap">
+    <aside class="own" aria-labelledby="own-h"><h2 id="own-h" class="mono">My contribution</h2><p>My role is the simulation side of the workflow below: calibrating MAGMASOFT against experimental results, building and modifying mold CAD, and configuring and running the cases. I also collect and analyze die-casting data that supports calibrating the machine-learning defect models, which are broader research efforts.</p></aside><section class="results-wrap" aria-labelledby="res-h"><h2 id="res-h" class="sr-only">Key results</h2><ul class="results"><li><p class="val">30+</p><p class="lbl">Metal-casting simulations generated across multiple material conditions</p><p class="kind mono kind-reported">Reported</p></li><li><p class="val">13+</p><p class="lbl">Material systems where material-property and database issues were debugged</p><p class="kind mono kind-reported">Reported</p></li><li><p class="val">11+</p><p class="lbl">Materials simulated to evaluate solidification, fluidity, and porosity formation</p><p class="kind mono kind-reported">Reported</p></li></ul><dl class="legend"><div><dt class="mono kind-reported">Reported</dt><dd>Workplace or lab figure as stated on my resume or portfolio.</dd></div></dl></section><section class="case-sec" aria-labelledby="problem-and-background"><h2 id="problem-and-background">Problem and background</h2><div class="case-body"><p>MAGMASOFT predictions must be calibrated against physical die-casting results before the simulated porosity and fluidity behavior can be trusted. Without calibration, a simulation can look convincing and still disagree with the part that comes out of the die.</p></div></section><section class="case-sec" aria-labelledby="objective"><h2 id="objective">Objective</h2><div class="case-body"><p>Develop a simulation and data workflow that:</p><ul><li>Correlates MAGMASOFT results with experimental casting data to validate simulation settings.</li><li>Evaluates porosity and fluidity across multiple casting conditions.</li><li>Reduces reliance on physical casting trials.</li></ul></div></section><section class="case-sec" aria-labelledby="where-my-work-sits"><h2 id="where-my-work-sits">Where my work sits</h2><div class="case-body"><p>The research group's workflow starts from process parameters: metal temperature, mold temperature, shot profile, composition, and vacuum level. Those drive both die-casting trials and casting simulations. Simulation results are low fidelity and cheap; CT scanning of cast parts is high fidelity and expensive. Bayesian optimization with a surrogate model links the two, and AI/ML models (random forest, neural network, logistic regression) predict porosity. My work is the casting-simulation block.</p><div class="figs figs-1"><figure class="fig" style="--w:1241px"><a class="zoom" href="../assets/img/casting/research-workflow.webp" data-caption="Research workflow as presented in my portfolio catalog. The casting-simulation block is my work; the CT scanning and AI/ML porosity models are broader research efforts." data-alt="Flow diagram of the casting research workflow. Process parameters feed die-casting trials and casting simulations. Simulation gives low-fidelity, cheap results; CT scanning gives high-fidelity, expensive results. Bayesian optimization with a surrogate model connects them, and AI and machine-learning models predict porosity." aria-label="View larger: Research workflow as presented in my portfolio catalog. The casting-simulation block is my work; the CT scanning and AI/ML porosity models are broader research efforts."><img src="../assets/img/casting/research-workflow.webp" srcset="../assets/img/casting/research-workflow-700.webp 700w, ../assets/img/casting/research-workflow.webp 1241w" sizes="(min-width: 900px) 720px, 100vw" width="1241" height="560" alt="Flow diagram of the casting research workflow. Process parameters feed die-casting trials and casting simulations. Simulation gives low-fidelity, cheap results; CT scanning gives high-fidelity, expensive results. Bayesian optimization with a surrogate model connects them, and AI and machine-learning models predict porosity." style="--w:1241px;--h:560px" loading="lazy" decoding="async"></a><figcaption><span class="mono">FIG. 01</span> Research workflow as presented in my portfolio catalog. The casting-simulation block is my work; the CT scanning and AI/ML porosity models are broader research efforts.</figcaption></figure></div></div></section><section class="case-sec" aria-labelledby="approach-and-responsibilities"><h2 id="approach-and-responsibilities">Approach and responsibilities</h2><div class="case-body"><ul><li>Calibrate MAGMASOFT simulations against experimental results and troubleshoot discrepancies with real-world casting behavior.</li><li>Build and modify CAD models of molds and internal mold features.</li><li>Configure and execute simulations for gravity casting and high-pressure die casting (HPDC).</li><li>Collect and analyze experimental die-casting data to validate simulations and calibrate machine-learning models for casting defect prediction.</li><li>Prepare metal samples for electron microscopy and tensile testing to characterize material and casting performance.</li></ul><div class="figs figs-2"><figure class="fig" style="--w:385px"><a class="zoom" href="../assets/img/casting/cast-test-geometry.webp" data-caption="A cast test geometry from the experimental trials." data-alt="A die-cast test casting with several parallel bars extending from a common base." aria-label="View larger: A cast test geometry from the experimental trials."><img src="../assets/img/casting/cast-test-geometry.webp" width="385" height="276" alt="A die-cast test casting with several parallel bars extending from a common base." style="--w:385px;--h:276px" loading="lazy" decoding="async"></a><figcaption><span class="mono">FIG. 02</span> A cast test geometry from the experimental trials.</figcaption></figure><figure class="fig" style="--w:412px"><a class="zoom" href="../assets/img/casting/simulation-output.webp" data-caption="A MAGMASOFT result visualization from the calibration work." data-alt="MAGMASOFT result visualization: a colored contour field across a flat cavity with parallel bar features, and a speckled cylindrical feature on top." aria-label="View larger: A MAGMASOFT result visualization from the calibration work."><img src="../assets/img/casting/simulation-output.webp" width="412" height="299" alt="MAGMASOFT result visualization: a colored contour field across a flat cavity with parallel bar features, and a speckled cylindrical feature on top." style="--w:412px;--h:299px" loading="lazy" decoding="async"></a><figcaption><span class="mono">FIG. 03</span> A MAGMASOFT result visualization from the calibration work.</figcaption></figure></div></div></section><section class="case-sec" aria-labelledby="progress-and-results"><h2 id="progress-and-results">Progress and results</h2><div class="case-body"><ul><li>Generated 30+ metal-casting simulations across multiple material conditions.</li><li>Debugged material-property and database issues for 13+ material systems.</li><li>Calibration and validation against experimental results are ongoing, so there is no final result to report yet.</li></ul></div></section><section class="case-sec" aria-labelledby="tools-h"><h2 id="tools-h">Tools and methods</h2><div class="case-body"><ul class="tools"><li>MAGMASOFT</li><li>Gravity casting and HPDC process setups</li><li>Mold CAD</li><li>Experimental die-casting data analysis</li><li>Sample preparation for electron microscopy and tensile testing</li></ul><p class="note">Counts are as stated in my resume and portfolio catalog at the time of writing; the work is ongoing.</p></div></section><nav class="case-nav" aria-label="Case studies">
+      <a href="../index.html#work"><span class="mono">Back</span> All work</a>
+      <a href="air-motor-machining.html"><span class="mono">Next case study</span> Air motor piston and cylinder machining <span aria-hidden="true">&rarr;</span></a>
+    </nav>
+  </div>
+</article></main><footer class="site-footer">
+  <div class="wrap">
+    <p class="conf"><span class="mono">Confidentiality</span> All figures and information presented here have been reviewed and approved by the relevant advisors, assignment leaders, and company managers. The material has been carefully selected and presented at a level that does not disclose confidential, proprietary, or otherwise sensitive company information.</p>
+    <div class="foot-row">
+      <p>&copy; 2026 Franky Lian</p>
+      <p class="foot-links">
+        <a href="https://www.linkedin.com/in/franky-lian" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/undescribable" rel="noopener">GitHub</a>
+        <a href="https://github.com/undescribable/FrankyLian_Portfolio" rel="noopener">Site source</a>
+      </p>
+      <p class="muted">Set in IBM Plex. Self-hosted, SIL Open Font License.</p>
+    </div>
+  </div>
+</footer>
+<dialog id="lightbox" aria-label="Image viewer">
+  <figure>
+    <img alt="">
+    <figcaption></figcaption>
+  </figure>
+  <button type="button" class="lb-close" aria-label="Close image viewer">Close</button>
+</dialog>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

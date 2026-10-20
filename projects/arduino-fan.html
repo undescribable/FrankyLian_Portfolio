@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Over-engineered fan: integrated Arduino control | Franky Lian</title>
+<meta name="description" content="A deliberately over-engineered fan, built to practice integrating sensing, control, and actuation in a single mechanical package.">
+<link rel="canonical" href="https://undescribable.github.io/FrankyLian_Portfolio/projects/arduino-fan.html">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f4f3ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#101315" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Franky Lian">
+<meta property="og:title" content="Over-engineered fan: integrated Arduino control">
+<meta property="og:description" content="A deliberately over-engineered fan, built to practice integrating sensing, control, and actuation in a single mechanical package.">
+<meta property="og:url" content="https://undescribable.github.io/FrankyLian_Portfolio/projects/arduino-fan.html">
+<meta property="og:image" content="https://undescribable.github.io/FrankyLian_Portfolio/assets/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Franky Lian, mechanical engineering portfolio">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/ibm-plex-sans-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/main.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Franky Lian", "url": "https://undescribable.github.io/FrankyLian_Portfolio/", "image": "https://undescribable.github.io/FrankyLian_Portfolio/assets/img/portrait.webp", "jobTitle": "Mechanical engineering student", "affiliation": {"@type": "CollegeOrUniversity", "name": "The Ohio State University"}, "sameAs": ["https://www.linkedin.com/in/franky-lian", "https://github.com/undescribable"]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">FL</span><span>Franky Lian</span></a>
+    <nav aria-label="Primary"><a href="../index.html#work">Work</a><a href="../index.html#experience">Experience</a><a href="../index.html#skills">Skills</a><a href="../index.html#about">About</a><a href="../index.html#contact">Contact</a><a class="nav-resume" href="../assets/Franky_Lian_Resume.pdf" target="_blank" rel="noopener">Resume</a></nav>
+  </div>
+</header>
+<main id="main"><article class="case">
+  <header class="case-head"><div class="wrap">
+    <p class="crumbs mono"><a href="../index.html#work">Work</a> / Mechanical Design &amp; Product Development</p>
+    <h1>Over-engineered fan: integrated Arduino control</h1>
+    <p class="dek">A deliberately over-engineered fan, built to practice integrating sensing, control, and actuation in a single mechanical package.</p>
+    <dl class="facts"><div><dt>Organization</dt><dd>The Ohio State University, ME2900</dd></div><div><dt>Role</dt><dd>Course project</dd></div><div><dt>Dates</dt><dd>January – February 2025</dd></div><div><dt>Status</dt><dd>Complete</dd></div><div><dt>Category</dt><dd>Mechanical Design &amp; Product Development</dd></div></dl>
+  </div></header>
+  <div class="wrap case-wrap">
+    <aside class="own" aria-labelledby="own-h"><h2 id="own-h" class="mono">My contribution</h2><p>Course project covering the CAD design, electronics integration, control logic, and assembly of the prototype.</p></aside><section class="results-wrap" aria-labelledby="res-h"><h2 id="res-h" class="sr-only">Key results</h2><ul class="results"><li><p class="val">5</p><p class="lbl">Distinct control functions in a fully integrated, remotely configurable fan</p><p class="kind mono kind-demonstrated">Demonstrated</p></li></ul><dl class="legend"><div><dt class="mono kind-demonstrated">Demonstrated</dt><dd>Observed in a working prototype.</dd></div></dl></section><section class="case-sec" aria-labelledby="objective"><h2 id="objective">Objective</h2><div class="case-body"><ul><li>Develop an Arduino-controlled fan system that integrates multiple sensing, control, and actuation modules.</li><li>Expand a basic fan into a user-configurable system with speed, direction, and angle control.</li></ul></div></section><section class="case-sec" aria-labelledby="design-and-integration"><h2 id="design-and-integration">Design and integration</h2><div class="case-body"><p>The system combines an Arduino Uno, an IR remote, an ultrasonic sensor, a DC motor, a servo, and the fan assembly. The control logic coordinates multiple inputs and outputs through a single interface.</p><ul><li><strong>Variable speed:</strong> user-defined speed adjustments with smooth transitions.</li><li><strong>Distance-based control:</strong> ultrasonic sensing automatically adjusts fan speed based on the user's distance.</li><li><strong>Rotational control:</strong> user-selectable forward and reverse rotation.</li><li><strong>Angle control:</strong> remote-controlled positioning from −45° to +45°.</li><li><strong>Automatic oscillation:</strong> programmed side-to-side angular motion.</li></ul><div class="figs figs-3"><figure class="fig" style="--w:236px"><a class="zoom" href="../assets/img/fan/exploded-cad.webp" data-caption="Exploded CAD view of the assembly." data-alt="Exploded CAD view of the fan assembly: fan housing at the top, then the servo mount, circuit components, and the enclosure box." aria-label="View larger: Exploded CAD view of the assembly."><img src="../assets/img/fan/exploded-cad.webp" width="236" height="483" alt="Exploded CAD view of the fan assembly: fan housing at the top, then the servo mount, circuit components, and the enclosure box." style="--w:236px;--h:483px" loading="lazy" decoding="async"></a><figcaption><span class="mono">FIG. 01</span> Exploded CAD view of the assembly.</figcaption></figure><figure class="fig" style="--w:204px"><a class="zoom" href="../assets/img/fan/cad-render.webp" data-caption="CAD render of the fan and enclosure." data-alt="Rendered CAD model of the red fan on a red enclosure box." aria-label="View larger: CAD render of the fan and enclosure."><img src="../assets/img/fan/cad-render.webp" width="204" height="217" alt="Rendered CAD model of the red fan on a red enclosure box." style="--w:204px;--h:217px" loading="lazy" decoding="async"></a><figcaption><span class="mono">FIG. 02</span> CAD render of the fan and enclosure.</figcaption></figure><figure class="fig" style="--w:411px"><a class="zoom" href="../assets/img/fan/electronics.webp" data-caption="Electronics layout before final assembly." data-alt="Red fan parts next to an open red enclosure holding an Arduino, breadboard, and wiring." aria-label="View larger: Electronics layout before final assembly."><img src="../assets/img/fan/electronics.webp" width="411" height="257" alt="Red fan parts next to an open red enclosure holding an Arduino, breadboard, and wiring." style="--w:411px;--h:257px" loading="lazy" decoding="async"></a><figcaption><span class="mono">FIG. 03</span> Electronics layout before final assembly.</figcaption></figure></div></div></section><section class="case-sec" aria-labelledby="result"><h2 id="result">Result</h2><div class="case-body"><p>A working prototype with five distinct control functions, demonstrating practical application of sensors, actuators, embedded control, and system integration.</p><div class="figs figs-1"><figure class="fig" style="--w:207px"><a class="zoom" href="../assets/img/fan/finished-prototype.webp" data-caption="The finished prototype." data-alt="The finished red fan prototype on top of its enclosure, with the ultrasonic sensor visible on the front." aria-label="View larger: The finished prototype."><img src="../assets/img/fan/finished-prototype.webp" width="207" height="217" alt="The finished red fan prototype on top of its enclosure, with the ultrasonic sensor visible on the front." style="--w:207px;--h:217px" loading="lazy" decoding="async"></a><figcaption><span class="mono">FIG. 04</span> The finished prototype.</figcaption></figure></div></div></section><section class="case-sec" aria-labelledby="tools-h"><h2 id="tools-h">Tools and methods</h2><div class="case-body"><ul class="tools"><li>SOLIDWORKS</li><li>Arduino Uno</li><li>IR remote and ultrasonic sensor</li><li>DC motor and servo</li></ul></div></section><nav class="case-nav" aria-label="Case studies">
+      <a href="../index.html#work"><span class="mono">Back</span> All work</a>
+      <a href="bracket-misalignment.html"><span class="mono">Next case study</span> Bracket misalignment at assembly <span aria-hidden="true">&rarr;</span></a>
+    </nav>
+  </div>
+</article></main><footer class="site-footer">
+  <div class="wrap">
+    <p class="conf"><span class="mono">Confidentiality</span> All figures and information presented here have been reviewed and approved by the relevant advisors, assignment leaders, and company managers. The material has been carefully selected and presented at a level that does not disclose confidential, proprietary, or otherwise sensitive company information.</p>
+    <div class="foot-row">
+      <p>&copy; 2026 Franky Lian</p>
+      <p class="foot-links">
+        <a href="https://www.linkedin.com/in/franky-lian" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/undescribable" rel="noopener">GitHub</a>
+        <a href="https://github.com/undescribable/FrankyLian_Portfolio" rel="noopener">Site source</a>
+      </p>
+      <p class="muted">Set in IBM Plex. Self-hosted, SIL Open Font License.</p>
+    </div>
+  </div>
+</footer>
+<dialog id="lightbox" aria-label="Image viewer">
+  <figure>
+    <img alt="">
+    <figcaption></figcaption>
+  </figure>
+  <button type="button" class="lb-close" aria-label="Close image viewer">Close</button>
+</dialog>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

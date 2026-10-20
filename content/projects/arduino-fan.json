@@ -1,0 +1,69 @@
+{
+  "slug": "arduino-fan",
+  "title": "Over-engineered fan: integrated Arduino control",
+  "short": "A basic fan turned into a remotely configurable system: variable speed, distance-based speed, forward and reverse, ±45° angle control, and automatic oscillation from one Arduino.",
+  "lede": "A deliberately over-engineered fan, built to practice integrating sensing, control, and actuation in a single mechanical package.",
+  "cats": ["design"],
+  "org": "The Ohio State University, ME2900",
+  "role": "Course project",
+  "dates": "January – February 2025",
+  "status": "Complete",
+  "thumb": {"src": "fan/finished-prototype", "alt": ""},
+  "ownership": "Course project covering the CAD design, electronics integration, control logic, and assembly of the prototype.",
+  "results": [
+    {"value": "5", "label": "Distinct control functions in a fully integrated, remotely configurable fan", "kind": "demonstrated"}
+  ],
+  "sections": [
+    {
+      "heading": "Objective",
+      "bullets": [
+        "Develop an Arduino-controlled fan system that integrates multiple sensing, control, and actuation modules.",
+        "Expand a basic fan into a user-configurable system with speed, direction, and angle control."
+      ]
+    },
+    {
+      "heading": "Design and integration",
+      "paras": [
+        "The system combines an Arduino Uno, an IR remote, an ultrasonic sensor, a DC motor, a servo, and the fan assembly. The control logic coordinates multiple inputs and outputs through a single interface."
+      ],
+      "bullets": [
+        "**Variable speed:** user-defined speed adjustments with smooth transitions.",
+        "**Distance-based control:** ultrasonic sensing automatically adjusts fan speed based on the user's distance.",
+        "**Rotational control:** user-selectable forward and reverse rotation.",
+        "**Angle control:** remote-controlled positioning from −45° to +45°.",
+        "**Automatic oscillation:** programmed side-to-side angular motion."
+      ],
+      "figures": [
+        {
+          "src": "fan/exploded-cad",
+          "alt": "Exploded CAD view of the fan assembly: fan housing at the top, then the servo mount, circuit components, and the enclosure box.",
+          "caption": "Exploded CAD view of the assembly."
+        },
+        {
+          "src": "fan/cad-render",
+          "alt": "Rendered CAD model of the red fan on a red enclosure box.",
+          "caption": "CAD render of the fan and enclosure."
+        },
+        {
+          "src": "fan/electronics",
+          "alt": "Red fan parts next to an open red enclosure holding an Arduino, breadboard, and wiring.",
+          "caption": "Electronics layout before final assembly."
+        }
+      ]
+    },
+    {
+      "heading": "Result",
+      "paras": [
+        "A working prototype with five distinct control functions, demonstrating practical application of sensors, actuators, embedded control, and system integration."
+      ],
+      "figures": [
+        {
+          "src": "fan/finished-prototype",
+          "alt": "The finished red fan prototype on top of its enclosure, with the ultrasonic sensor visible on the front.",
+          "caption": "The finished prototype."
+        }
+      ]
+    }
+  ],
+  "tools": ["SOLIDWORKS", "Arduino Uno", "IR remote and ultrasonic sensor", "DC motor and servo"]
+}

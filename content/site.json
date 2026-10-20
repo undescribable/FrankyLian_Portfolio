@@ -1,0 +1,230 @@
+{
+  "name": "Franky Lian",
+  "url": "https://undescribable.github.io/FrankyLian_Portfolio/",
+  "title": "Franky Lian | Mechanical Engineering Portfolio",
+  "description": "Mechanical engineering student at Ohio State: GD&T and design, scan-to-CAD failure analysis, CFD, and casting simulation. Case studies and experience.",
+  "eyebrow": "Mechanical engineering · The Ohio State University",
+  "headline": "Mechanical design, dimensional quality, and simulation.",
+  "intro": "I'm a mechanical engineering student at Ohio State. Across four internship rotations at GE Appliances and TotalSim, and in casting research at the Advanced Casting Research Center, I've written GD&T schemes for suspension subsystems, supported a scan-to-CAD investigation of an assembly failure, and run CFD design studies on impeller geometry.",
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/franky-lian",
+    "github": "https://github.com/undescribable",
+    "resume": "assets/Franky_Lian_Resume.pdf",
+    "email_user": "lianfranky.10",
+    "email_domain": "gmail.com",
+    "repo": "https://github.com/undescribable/FrankyLian_Portfolio"
+  },
+  "confidentiality": "All figures and information presented here have been reviewed and approved by the relevant advisors, assignment leaders, and company managers. The material has been carefully selected and presented at a level that does not disclose confidential, proprietary, or otherwise sensitive company information.",
+  "categories": [
+    {"id": "design", "label": "Design", "full": "Mechanical Design & Product Development"},
+    {"id": "quality", "label": "Quality", "full": "Quality Engineering & Failure Analysis"},
+    {"id": "simulation", "label": "Simulation", "full": "Simulation, CFD & Optimization"},
+    {"id": "manufacturing", "label": "Materials & manufacturing", "full": "Materials, Casting & Manufacturing"}
+  ],
+  "project_order": [
+    "bracket-misalignment",
+    "washer-suspension",
+    "centrifugal-compressor",
+    "casting-simulation",
+    "air-motor-machining",
+    "arduino-fan"
+  ],
+  "hero_sheet": {
+    "fig": "FIG. 01",
+    "images": [
+      {
+        "src": "bracket/scan-initial",
+        "tag": "As found",
+        "alt": "PolyWorks inspection view of a bent sheet-metal bracket overlaid on its nominal CAD, with a red surface-profile report marking the as-found part out of tolerance.",
+        "caption": "As found: surface-profile deviation 0.183 against a 0.035 callout (fail); Z angle 84.741 against 90.000 nominal."
+      },
+      {
+        "src": "bracket/scan-resolution",
+        "tag": "Resolution",
+        "alt": "PolyWorks inspection view of the bracket at resolution, with a surface-profile report showing passing results.",
+        "caption": "Resolution: surface-profile deviation 0.017 (pass); Z angle 89.352."
+      }
+    ],
+    "titleblock": [
+      ["Part", "Dishwasher retaining bracket"],
+      ["Method", "PolyWorks scan-to-CAD"],
+      ["Callout", "0.035 | A | B | C"],
+      ["As found", "0.183, out of tolerance", "fail"],
+      ["Resolution", "0.017, within tolerance", "pass"]
+    ],
+    "caption": "Surface-profile check of a bracket against its drawing callout, as found and at resolution. GE Appliances, July 2026.",
+    "project": "bracket-misalignment"
+  },
+  "pillars": [
+    {
+      "n": "01",
+      "title": "Design for manufacture",
+      "text": "GD&T schemes to ASME Y14.5-2009 for three suspension subsystems, drawings released in Creo, and aluminum parts machined to 0.001 in.",
+      "links": [["washer-suspension", "Suspension design"], ["air-motor-machining", "Air-motor machining"]]
+    },
+    {
+      "n": "02",
+      "title": "Inspect and investigate",
+      "text": "PolyWorks scan-to-CAD and tolerance stack-ups to trace an assembly failure on dishwasher components, with the evidence presented in an engineering review.",
+      "links": [["bracket-misalignment", "Bracket root-cause analysis"]]
+    },
+    {
+      "n": "03",
+      "title": "Simulate and validate",
+      "text": "STAR-CCM+ and HEEDS design studies at TotalSim, and MAGMASOFT casting simulations calibrated against die-casting data at ACRC.",
+      "links": [["#exp-totalsim-2026", "CFD at TotalSim"], ["casting-simulation", "Casting simulation"]]
+    }
+  ],
+  "team_projects": [
+    {
+      "title": "Liquid Rocket Systems sub-team",
+      "org": "Buckeye Space Launch Initiative",
+      "dates": "August 2024 – present",
+      "cats": ["design"],
+      "bullets": [
+        "Developed a parametric Venturi nozzle in Onshape with configurable geometries to encompass different fasteners and CFD design requirements.",
+        "Designed piston and O-ring dimensions for the rocket's aft closure, ensuring proper sealing and fit."
+      ]
+    },
+    {
+      "title": "Aerodynamics sub-team",
+      "org": "Buckeye Solar Racing",
+      "dates": "September 2023 – March 2025",
+      "cats": ["manufacturing"],
+      "bullets": [
+        "Constructed carbon-fiber composite structures such as the aeroshell, baffles, and other aerodynamic components to achieve lightweight and durable builds."
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "id": "acrc",
+      "org": "Advanced Casting Research Center, The Ohio State University",
+      "title": "Undergraduate Research Assistant",
+      "place": "Columbus, OH",
+      "dates": "March 2026 – present",
+      "bullets": [
+        "Conducted MAGMASOFT simulations across 11+ materials to evaluate solidification, fluidity, and porosity formation.",
+        "Collected and analyzed experimental die-casting data to validate simulations and calibrate machine-learning models for casting defect prediction.",
+        "Prepared metal samples for electron microscopy and tensile testing to characterize material and casting performance."
+      ],
+      "related": [["casting-simulation", "Case study: casting simulation"]]
+    },
+    {
+      "id": "ge-quality",
+      "org": "GE Appliances, a Haier Company",
+      "title": "Mechanical Engineering Intern, Quality",
+      "place": "Louisville, KY",
+      "dates": "May 2026 – August 2026",
+      "bullets": [
+        "Conducted dimensional analysis and tolerance stack-up studies on dishwasher components, providing engineering data that supported a cost reduction project with a projected $1M–$3M savings opportunity.",
+        "Performed hardware evaluations, testing, and engineering validation to support quality and product performance improvements.",
+        "Supported root cause investigation of component assembly failures using PolyWorks scan-to-CAD analysis, contributing to drawing revisions that reduced failure rates from 3% to 0.5% and saved approximately $150K."
+      ],
+      "related": [["bracket-misalignment", "Case study: bracket misalignment"]]
+    },
+    {
+      "id": "totalsim-2026",
+      "org": "TotalSim LLC",
+      "title": "Computational Fluid Dynamics Engineering Intern",
+      "place": "Dublin, OH",
+      "dates": "February 2026 – May 2026",
+      "bullets": [
+        "Created Siemens NX parameterizable models of impellers, wind tunnels, data center coolers, and engine ducts with 1%–2% deviation from legacy benchmarks.",
+        "Cleaned complex CAD and scan-based geometries and generated CFD meshes using ANSA and STAR-CCM+ for aerodynamic trade studies."
+      ]
+    },
+    {
+      "id": "ge-design",
+      "org": "GE Appliances, a Haier Company",
+      "title": "Mechanical Engineering Intern, Design",
+      "place": "Louisville, KY",
+      "dates": "August 2025 – January 2026",
+      "bullets": [
+        "Developed GD&T schemes (ASME Y14.5-2009) and technical specifications for 3 suspension subsystems.",
+        "Validated suspension performance improvements against legacy designs through testing to support design decisions.",
+        "Released engineering drawings on Creo and managed part configurations in Windchill PLM for new product development.",
+        "Prototyped proofs-of-concept for product challenges, contributing to 4 pending patent applications."
+      ],
+      "related": [["washer-suspension", "Case study: suspension design"]]
+    },
+    {
+      "id": "totalsim-2025",
+      "org": "TotalSim LLC",
+      "title": "Computational Fluid Dynamics Engineering Intern",
+      "place": "Dublin, OH",
+      "dates": "May 2025 – August 2025",
+      "bullets": [
+        "Leveraged Siemens HEEDS and Java-based automation to enable repeatable CFD design studies, identifying impeller geometry changes that improved hydraulic efficiency by up to 5%.",
+        "Performed CFD geometry preparation, case setup, and post-processing in STAR-CCM+ for UAV, thermal management, and rotating machinery applications."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "group": "CAD & product design",
+      "items": [
+        ["Creo", "Released engineering drawings (GE Appliances)"],
+        ["Siemens NX", "Parameterizable CFD geometry (TotalSim)"],
+        ["SOLIDWORKS", "Certified SOLIDWORKS Professional, June 2026; compressor and fan projects"],
+        ["Onshape", "Parametric Venturi nozzle (Buckeye Space Launch Initiative)"],
+        ["GD&T, ASME Y14.5-2009", "Schemes for 3 suspension subsystems"],
+        ["Tolerance stack-up analysis", "Assembly failure investigation (GE Appliances)"]
+      ]
+    },
+    {
+      "group": "Simulation & optimization",
+      "items": [
+        ["STAR-CCM+", "CFD setup, meshing, post-processing (TotalSim)"],
+        ["ANSYS Fluent", "Compressor airflow prediction"],
+        ["Siemens HEEDS", "Automated, repeatable CFD design studies (TotalSim)"],
+        ["ANSA", "CAD cleanup and CFD meshing (TotalSim)"],
+        ["MAGMASOFT", "Casting simulation (ACRC)"],
+        ["Machine-learning model calibration", "Casting defect prediction (ACRC)"]
+      ],
+      "also": ["Simcenter 3D (listed on resume)"]
+    },
+    {
+      "group": "Quality & manufacturing",
+      "items": [
+        ["PolyWorks", "3D scan-to-CAD analysis (GE Appliances)"],
+        ["3D scanning and dimensional metrology", "Parts compared against nominal CAD"],
+        ["Root-cause analysis", "Bracket assembly failure (GE Appliances)"],
+        ["Manual lathe and mill", "Air-motor course project (ME2900)"],
+        ["Composite fabrication", "Carbon-fiber aeroshell and baffles (Buckeye Solar Racing)"],
+        ["3D printing in PLA", "Compressor prototype"]
+      ],
+      "also": ["CNC machining (listed on resume)", "PFMEA (listed on resume)"]
+    },
+    {
+      "group": "Programming & automation",
+      "items": [
+        ["Java", "HEEDS automation (TotalSim)"],
+        ["Arduino", "Five-function fan controller (ME2900)"]
+      ],
+      "also": ["Python", "MATLAB", "Simulink", "C++", "Linux (listed on resume)"]
+    },
+    {
+      "group": "PLM & engineering workflow",
+      "items": [
+        ["Windchill PLM", "Managed part configurations (GE Appliances)"],
+        ["Engineering drawing release", "Creo drawings for new product development"],
+        ["Technical specifications", "For 3 suspension subsystems"]
+      ]
+    }
+  ],
+  "about": [
+    "I'm a mechanical engineering student at The Ohio State University, and my work so far sits where design, manufacturing, and quality meet. At GE Appliances I wrote GD&T schemes for suspension subsystems in one rotation, then used scan-to-CAD data in the next to help find out why a bracket was failing at assembly. At TotalSim I built parametric CAD and ran CFD design studies, and at the Advanced Casting Research Center I calibrate casting simulations against die-casting data.",
+    "I'm also on the Liquid Rocket Systems sub-team at Buckeye Space Launch Initiative, where I developed a parametric Venturi nozzle and sized the piston and O-rings for the aft closure. I'm interested in product lifecycle management as well: at GE I released drawings in Creo and managed part configurations in Windchill.",
+    "Away from coursework I'm prototyping a wireless vacuum cleaner and experimenting with ramen.",
+    "I'm looking for internship and early-career roles in mechanical design, manufacturing and quality engineering, simulation, and aerospace, where the drawing, the part, and the analysis all have to agree."
+  ],
+  "education": {
+    "school": "The Ohio State University",
+    "degree": "B.S. Mechanical Engineering",
+    "dates": "August 2023 – December 2027 (expected)",
+    "gpa": "GPA 3.95 / 4.00",
+    "cert": "Certified SOLIDWORKS Professional (CSWP), Dassault Systèmes, June 2026"
+  },
+  "contact_text": "I'm looking for internship and early-career roles in mechanical design, manufacturing and quality engineering, simulation, and aerospace."
+}

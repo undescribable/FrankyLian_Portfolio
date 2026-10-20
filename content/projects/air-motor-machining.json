@@ -1,0 +1,68 @@
+{
+  "slug": "air-motor-machining",
+  "title": "Air motor piston and cylinder machining",
+  "short": "Aluminum piston and cylinder parts machined to 0.001 in from drawings and GD&T, then assembled into an air motor that ran at 400+ RPM.",
+  "lede": "A course project in turning a drawing into hardware: read the GD&T, choose a process, hold the dimension, and find out whether the assembly runs.",
+  "cats": ["manufacturing", "design"],
+  "org": "The Ohio State University, ME2900",
+  "role": "Machining course project",
+  "dates": "January – February 2025",
+  "status": "Complete",
+  "thumb": {"src": "air-motor/subassembly", "alt": ""},
+  "ownership": "Course project. I machined the aluminum piston and cylinder components, verified them with precision gauges, and assembled and tested the subassembly with the air motor.",
+  "results": [
+    {"value": "0.001 in", "label": "Dimensional tolerance achieved on machined aluminum components", "kind": "measured"},
+    {"value": "400+ RPM", "label": "Air motor speed when physically tested after assembly", "kind": "measured"}
+  ],
+  "sections": [
+    {
+      "heading": "Objective",
+      "bullets": [
+        "Translate engineering drawings and GD&T requirements into physical components.",
+        "Machine an air-motor subassembly to precision dimensional and surface requirements.",
+        "Assemble and test the completed motor at 400+ RPM."
+      ]
+    },
+    {
+      "heading": "Process",
+      "bullets": [
+        "Machined aluminum components using manual mill and manual lathe operations.",
+        "Used precision gauges and measurement techniques to verify dimensional accuracy.",
+        "Evaluated how machining processes affect surface finish, geometry, and functional fit.",
+        "Assembled the machined components and integrated the subassembly with the air motor."
+      ],
+      "figures": [
+        {
+          "src": "air-motor/machined-parts",
+          "alt": "Machined aluminum cylinder block, a thin rectangular bar, and a flanged cap marked FC on a workshop bench.",
+          "caption": "Machined aluminum components before assembly."
+        },
+        {
+          "src": "air-motor/subassembly",
+          "alt": "Hands fitting the machined piston and cylinder subassembly onto the air motor frame.",
+          "caption": "Fitting the subassembly to the air motor."
+        }
+      ]
+    },
+    {
+      "heading": "Verification and results",
+      "paras": [
+        "Parts were checked with precision gauges against the drawing, and the finished motor was run on the bench. Components held 0.001 in tolerance, and the assembled air motor ran at 400+ RPM."
+      ],
+      "figures": [
+        {
+          "src": "air-motor/test-setup",
+          "alt": "Hands adjusting the assembled air motor on a lab bench, with wiring and instruments around it.",
+          "caption": "Testing the assembled air motor."
+        }
+      ]
+    },
+    {
+      "heading": "What I took from it",
+      "paras": [
+        "A practical understanding of design intent, manufacturing capability, precision cost, and inspection methodology. In particular, how datum selection, the machining process, surface characteristics, and measurement technique all influence final component performance."
+      ]
+    }
+  ],
+  "tools": ["Manual mill", "Manual lathe", "Precision gauges and measurement techniques", "GD&T drawings"]
+}

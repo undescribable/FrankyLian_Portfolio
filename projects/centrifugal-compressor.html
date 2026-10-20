@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3D-printed centrifugal compressor | Franky Lian</title>
+<meta name="description" content="A personal project that closes the loop between CAD, CFD, and hardware: design a parametric impeller, predict its flow, print it, and measure how far reality...">
+<link rel="canonical" href="https://undescribable.github.io/FrankyLian_Portfolio/projects/centrifugal-compressor.html">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f4f3ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#101315" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Franky Lian">
+<meta property="og:title" content="3D-printed centrifugal compressor">
+<meta property="og:description" content="A personal project that closes the loop between CAD, CFD, and hardware: design a parametric impeller, predict its flow, print it, and measure how far reality...">
+<meta property="og:url" content="https://undescribable.github.io/FrankyLian_Portfolio/projects/centrifugal-compressor.html">
+<meta property="og:image" content="https://undescribable.github.io/FrankyLian_Portfolio/assets/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Franky Lian, mechanical engineering portfolio">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/ibm-plex-sans-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/main.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Franky Lian", "url": "https://undescribable.github.io/FrankyLian_Portfolio/", "image": "https://undescribable.github.io/FrankyLian_Portfolio/assets/img/portrait.webp", "jobTitle": "Mechanical engineering student", "affiliation": {"@type": "CollegeOrUniversity", "name": "The Ohio State University"}, "sameAs": ["https://www.linkedin.com/in/franky-lian", "https://github.com/undescribable"]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">FL</span><span>Franky Lian</span></a>
+    <nav aria-label="Primary"><a href="../index.html#work">Work</a><a href="../index.html#experience">Experience</a><a href="../index.html#skills">Skills</a><a href="../index.html#about">About</a><a href="../index.html#contact">Contact</a><a class="nav-resume" href="../assets/Franky_Lian_Resume.pdf" target="_blank" rel="noopener">Resume</a></nav>
+  </div>
+</header>
+<main id="main"><article class="case">
+  <header class="case-head"><div class="wrap">
+    <p class="crumbs mono"><a href="../index.html#work">Work</a> / Mechanical Design &amp; Product Development, Simulation, CFD &amp; Optimization</p>
+    <h1>3D-printed centrifugal compressor</h1>
+    <p class="dek">A personal project that closes the loop between CAD, CFD, and hardware: design a parametric impeller, predict its flow, print it, and measure how far reality lands from the prediction.</p>
+    <dl class="facts"><div><dt>Organization</dt><dd>Personal project</dd></div><div><dt>Role</dt><dd>Design, simulation, and testing</dd></div><div><dt>Dates</dt><dd>October 2024 – January 2025</dd></div><div><dt>Status</dt><dd>Complete</dd></div><div><dt>Category</dt><dd>Mechanical Design &amp; Product Development, Simulation, CFD &amp; Optimization</dd></div></dl>
+  </div></header>
+  <div class="wrap case-wrap">
+    <aside class="own" aria-labelledby="own-h"><h2 id="own-h" class="mono">My contribution</h2><p>Personal project. The parametric model, the simulation loop, and the anemometer validation described here are my own work.</p></aside><section class="results-wrap" aria-labelledby="res-h"><h2 id="res-h" class="sr-only">Key results</h2><ul class="results"><li><p class="val">24.55 CFM</p><p class="lbl">Predicted volumetric flow rate from the ANSYS Fluent simulation</p><p class="kind mono kind-simulated">Simulated</p></li><li><p class="val">within ±20%</p><p class="lbl">Measured airflow against the predicted flow, using an anemometer</p><p class="kind mono kind-measured">Measured</p></li></ul><dl class="legend"><div><dt class="mono kind-simulated">Simulated</dt><dd>Output of a simulation, not a physical test.</dd></div><div><dt class="mono kind-measured">Measured</dt><dd>Instrument reading from a test or inspection.</dd></div></dl></section><section class="case-sec" aria-labelledby="problem-and-constraints"><h2 id="problem-and-constraints">Problem and constraints</h2><div class="case-body"><p>The compressor had to fit within its housing, targeting a <strong>50 mm diameter</strong> at <strong>10,000 RPM</strong>. Each blade's geometry depends on its neighbors, so a change to one blade ripples through the whole impeller.</p></div></section><section class="case-sec" aria-labelledby="approach-equation-based-blades"><h2 id="approach-equation-based-blades">Approach: equation-based blades</h2><div class="case-body"><p>Rather than sketching blades by hand, I defined them with equations. Varying the degree of power of a spline changes the blade shape, and the complexity of the model is set by the formula and technique used. The result is a parameterizable model that can be re-driven after each simulation.</p><div class="figs figs-2"><figure class="fig" style="--w:246px"><a class="zoom" href="../assets/img/compressor/impeller-cad.webp" data-caption="Impeller model with equation-defined blades." data-alt="Orange CAD model of a centrifugal impeller with curved blades around a central hub." aria-label="View larger: Impeller model with equation-defined blades."><img src="../assets/img/compressor/impeller-cad.webp" width="246" height="233" alt="Orange CAD model of a centrifugal impeller with curved blades around a central hub." style="--w:246px;--h:233px" loading="lazy" decoding="async"></a><figcaption><span class="mono">FIG. 01</span> Impeller model with equation-defined blades.</figcaption></figure><figure class="fig" style="--w:462px"><a class="zoom" href="../assets/img/compressor/blade-geometry.webp" data-caption="Blade geometry study." data-alt="Grey CAD view of impeller blades with the orange hub visible between them." aria-label="View larger: Blade geometry study."><img src="../assets/img/compressor/blade-geometry.webp" width="462" height="343" alt="Grey CAD view of impeller blades with the orange hub visible between them." style="--w:462px;--h:343px" loading="lazy" decoding="async"></a><figcaption><span class="mono">FIG. 02</span> Blade geometry study.</figcaption></figure></div></div></section><section class="case-sec" aria-labelledby="simulation-feedback"><h2 id="simulation-feedback">Simulation feedback</h2><div class="case-body"><p>ANSYS Fluent simulations calculated the volumetric flow rate and visualized vortices within the volute, showing fluid stagnation and churning. Those results went back into CAD: I manipulated the design variables and resolved flaws in the parameterizable model.</p><div class="figs figs-2"><figure class="fig" style="--w:367px"><a class="zoom" href="../assets/img/compressor/assembly-cad.webp" data-caption="Assembly model of the housing and volute." data-alt="Blue CAD model of the compressor housing and volute with a small motor below." aria-label="View larger: Assembly model of the housing and volute."><img src="../assets/img/compressor/assembly-cad.webp" width="367" height="344" alt="Blue CAD model of the compressor housing and volute with a small motor below." style="--w:367px;--h:344px" loading="lazy" decoding="async"></a><figcaption><span class="mono">FIG. 03</span> Assembly model of the housing and volute.</figcaption></figure><figure class="fig" style="--w:239px"><a class="zoom" href="../assets/img/compressor/top-view-cad.webp" data-caption="Top view of the housing." data-alt="Top view of the blue compressor housing with the impeller visible at the center." aria-label="View larger: Top view of the housing."><img src="../assets/img/compressor/top-view-cad.webp" width="239" height="251" alt="Top view of the blue compressor housing with the impeller visible at the center." style="--w:239px;--h:251px" loading="lazy" decoding="async"></a><figcaption><span class="mono">FIG. 04</span> Top view of the housing.</figcaption></figure></div></div></section><section class="case-sec" aria-labelledby="design-decisions-and-trade-offs"><h2 id="design-decisions-and-trade-offs">Design decisions and trade-offs</h2><div class="case-body"><ul><li>Refining the blade equation improved geometric control, with a minor effect on performance.</li><li>Reviewing the model exposed design constraints I had not captured: zero-thickness geometry, conditions that cannot be manufactured, and insufficient design constraints overall.</li></ul><div class="figs figs-1"><figure class="fig" style="--w:247px"><a class="zoom" href="../assets/img/compressor/exploded-view.webp" data-caption="Exploded view of the assembly." data-alt="Exploded grey CAD view showing the volute cover, impeller, and housing base separated along the axis." aria-label="View larger: Exploded view of the assembly."><img src="../assets/img/compressor/exploded-view.webp" width="247" height="318" alt="Exploded grey CAD view showing the volute cover, impeller, and housing base separated along the axis." style="--w:247px;--h:318px" loading="lazy" decoding="async"></a><figcaption><span class="mono">FIG. 05</span> Exploded view of the assembly.</figcaption></figure></div></div></section><section class="case-sec" aria-labelledby="verification"><h2 id="verification">Verification</h2><div class="case-body"><p>I validated the compressor with an anemometer. Measured airflow was within <strong>±20%</strong> of the predicted 24.55 CFM. That is a wide band, and the gap had identifiable causes: excessive shaft friction and PLA deformation, plus dimensional variation and unintended surface friction from 3D printing.</p><div class="figs figs-1"><figure class="fig" style="--w:229px"><a class="zoom" href="../assets/img/compressor/printed-prototype.webp" data-caption="The printed PLA prototype." data-alt="Green 3D-printed compressor housing held in a hand, with wires attached." aria-label="View larger: The printed PLA prototype."><img src="../assets/img/compressor/printed-prototype.webp" width="229" height="212" alt="Green 3D-printed compressor housing held in a hand, with wires attached." style="--w:229px;--h:212px" loading="lazy" decoding="async"></a><figcaption><span class="mono">FIG. 06</span> The printed PLA prototype.</figcaption></figure></div></div></section><section class="case-sec" aria-labelledby="lessons-and-next-steps"><h2 id="lessons-and-next-steps">Lessons and next steps</h2><div class="case-body"><p>The main lesson was the importance of design for manufacture. Next steps would be functional tolerancing, material selection for the application, and better drafting techniques.</p></div></section><section class="case-sec" aria-labelledby="tools-h"><h2 id="tools-h">Tools and methods</h2><div class="case-body"><ul class="tools"><li>SOLIDWORKS</li><li>ANSYS Fluent</li><li>3D printing in PLA</li><li>Anemometer</li></ul></div></section><nav class="case-nav" aria-label="Case studies">
+      <a href="../index.html#work"><span class="mono">Back</span> All work</a>
+      <a href="casting-simulation.html"><span class="mono">Next case study</span> Casting simulation and porosity prediction <span aria-hidden="true">&rarr;</span></a>
+    </nav>
+  </div>
+</article></main><footer class="site-footer">
+  <div class="wrap">
+    <p class="conf"><span class="mono">Confidentiality</span> All figures and information presented here have been reviewed and approved by the relevant advisors, assignment leaders, and company managers. The material has been carefully selected and presented at a level that does not disclose confidential, proprietary, or otherwise sensitive company information.</p>
+    <div class="foot-row">
+      <p>&copy; 2026 Franky Lian</p>
+      <p class="foot-links">
+        <a href="https://www.linkedin.com/in/franky-lian" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/undescribable" rel="noopener">GitHub</a>
+        <a href="https://github.com/undescribable/FrankyLian_Portfolio" rel="noopener">Site source</a>
+      </p>
+      <p class="muted">Set in IBM Plex. Self-hosted, SIL Open Font License.</p>
+    </div>
+  </div>
+</footer>
+<dialog id="lightbox" aria-label="Image viewer">
+  <figure>
+    <img alt="">
+    <figcaption></figcaption>
+  </figure>
+  <button type="button" class="lb-close" aria-label="Close image viewer">Close</button>
+</dialog>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>
