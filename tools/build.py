@@ -396,6 +396,17 @@ def build_home():
     return "".join(out)
 
 
+def case_hero(p, root):
+    t = p["thumb"]
+    if "src" not in t:
+        return ""
+    return (
+        '<div class="wrap case-hero"><figure class="plate case-plate">'
+        + img_tag(t["src"], p["title"] + " technical image", root, loading="eager", priority=True)
+        + "</figure></div>"
+    )
+
+
 def build_project(slug):
     p = PROJECTS[slug]
     root = "../"
@@ -418,6 +429,7 @@ def build_project(slug):
     <p class="dek">{md(p['lede'])}</p>
     <dl class="facts">{facts}</dl>
   </div></header>
+  {case_hero(p, root)}
   <div class="wrap case-wrap">
     <aside class="own" aria-labelledby="own-h"><h2 id="own-h" class="mono">My contribution</h2><p>{md(p['ownership'])}</p></aside>""")
 

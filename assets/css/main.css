@@ -300,3 +300,9 @@ ul, ol { margin: 0; padding: 0; }
   body { background: #fff; color: #000; }
   .section { padding-block: 24px; }
 }
+
+/* ---------- case hero ---------- */
+.case-hero { margin-top: clamp(24px, 4vw, 40px); }
+.case-plate { aspect-ratio: 16 / 9; margin: 0; }
+.case-plate img { max-width: 92%; max-height: 92%; }
+@media (max-width: 760px) { .case-plate { aspect-ratio: 4 / 3; } }
