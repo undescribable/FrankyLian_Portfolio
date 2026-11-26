@@ -76,7 +76,7 @@ ul, ol { margin: 0; padding: 0; }
 .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 500; text-decoration: none; letter-spacing: -0.01em; }
 .brand-mark { display: inline-grid; place-items: center; width: 28px; height: 28px; background: var(--ink); color: var(--bg); font: 500 0.6875rem/1 var(--mono); letter-spacing: 0.04em; border-bottom: 3px solid var(--accent); }
 .site-header nav { display: flex; flex-wrap: wrap; gap: 4px 22px; font-size: 0.9375rem; }
-.site-header nav a { text-decoration: none; color: var(--muted); padding-block: 4px; }
+.site-header nav a { text-decoration: none; color: var(--muted); padding-block: 8px; }
 .site-header nav a:hover { color: var(--accent); }
 .site-header nav .nav-resume { color: var(--ink); border-bottom: 1px solid var(--accent); }
 
@@ -107,14 +107,14 @@ ul, ol { margin: 0; padding: 0; }
 @media (min-width: 1000px) { .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 560px); align-items: start; } }
 .hero h1 { margin: 0 0 24px; }
 .hero .name { display: block; color: var(--accent); margin-bottom: 18px; font-size: 0.8125rem; letter-spacing: 0.14em; }
-.headline { display: block; font-size: clamp(2.3rem, 5.4vw, 4.1rem); line-height: 1.03; letter-spacing: -0.03em; font-weight: 500; }
-.lede { font-size: clamp(1.05rem, 1.6vw, 1.25rem); line-height: 1.55; max-width: 56ch; color: var(--ink); }
+.headline { display: block; font-size: clamp(2.2rem, 4.6vw, 3.4rem); line-height: 1.03; letter-spacing: -0.03em; font-weight: 500; }
+.lede { font-size: clamp(1.05rem, 1.4vw, 1.15rem); line-height: 1.55; max-width: 56ch; color: var(--ink); }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 26px; margin-top: 28px; }
 
 /* hero inspection sheet */
 .sheet { margin: 0; min-width: 0; }
 .sheet-tabs { display: flex; }
-.sheet-tabs button { font: 500 0.75rem/1 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; padding: 11px 16px; background: transparent; color: var(--muted); border: 1px solid var(--line); border-bottom: 0; cursor: pointer; }
+.sheet-tabs button { min-height: 36px; font: 500 0.75rem/1 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; padding: 11px 16px; background: transparent; color: var(--muted); border: 1px solid var(--line); border-bottom: 0; cursor: pointer; }
 .sheet-tabs button + button { border-left: 0; }
 .sheet-tabs button[aria-selected="true"] { background: var(--plate); color: var(--plate-ink); border-color: var(--plate-line); }
 .sheet-states { background: var(--plate); color: var(--plate-ink); border: 1px solid var(--plate-line); padding: 16px; }
@@ -132,7 +132,7 @@ ul, ol { margin: 0; padding: 0; }
 .badge { display: inline-block; margin-left: 6px; padding: 0 6px; border: 1px solid currentColor; font-size: 0.6875rem; letter-spacing: 0.06em; text-transform: uppercase; }
 .badge.pass { color: var(--pass); }
 .badge.fail { color: var(--fail); }
-.sheet > figcaption { margin-top: 14px; color: var(--muted); font-size: 0.6875rem; line-height: 1.6; text-transform: none; letter-spacing: 0.02em; }
+.sheet > figcaption { margin-top: 14px; color: var(--muted); font-size: 0.8125rem; line-height: 1.6; text-transform: none; letter-spacing: 0.02em; }
 .sheet > figcaption span:first-child { color: var(--ink); text-transform: uppercase; letter-spacing: 0.08em; margin-right: 6px; }
 .sheet > figcaption a { color: var(--ink); white-space: nowrap; }
 
@@ -147,7 +147,7 @@ ul, ol { margin: 0; padding: 0; }
 
 /* ---------- work ---------- */
 .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
-.filter { font: inherit; font-size: 0.875rem; padding: 7px 14px; background: transparent; color: var(--muted); border: 1px solid var(--line); cursor: pointer; }
+.filter { font: inherit; font-size: 0.875rem; min-height: 36px; padding: 7px 14px; background: transparent; color: var(--muted); border: 1px solid var(--line); cursor: pointer; }
 .filter:hover { color: var(--ink); border-color: var(--ink); }
 .filter[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(36px, 5vw, 64px) clamp(24px, 3vw, 40px); }
