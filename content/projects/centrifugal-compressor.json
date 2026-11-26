@@ -1,0 +1,95 @@
+{
+  "slug": "centrifugal-compressor",
+  "title": "3D-printed centrifugal compressor",
+  "short": "An equation-driven impeller and volute modeled in SOLIDWORKS, simulated in ANSYS Fluent, printed in PLA, and checked against its predicted 24.55 CFM with an anemometer.",
+  "lede": "A personal project that closes the loop between CAD, CFD, and hardware: design a parametric impeller, predict its flow, print it, and measure how far reality lands from the prediction.",
+  "cats": ["design", "simulation"],
+  "org": "Personal project",
+  "role": "Design, simulation, and testing",
+  "dates": "October 2024 – January 2025",
+  "status": "Complete",
+  "thumb": {"src": "compressor/assembly-cad", "alt": ""},
+  "ownership": "Personal project. The parametric model, the simulation loop, and the anemometer validation described here are my own work.",
+  "results": [
+    {"value": "24.55 CFM", "label": "Predicted volumetric flow rate from the ANSYS Fluent simulation", "kind": "simulated"},
+    {"value": "within ±20%", "label": "Measured airflow against the predicted flow, using an anemometer", "kind": "measured"}
+  ],
+  "sections": [
+    {
+      "heading": "Problem and constraints",
+      "paras": [
+        "The compressor had to fit within its housing, targeting a **50 mm diameter** at **10,000 RPM**. Each blade's geometry depends on its neighbors, so a change to one blade ripples through the whole impeller."
+      ]
+    },
+    {
+      "heading": "Approach: equation-based blades",
+      "paras": [
+        "Rather than sketching blades by hand, I defined them with equations. Varying the degree of power of a spline changes the blade shape, and the complexity of the model is set by the formula and technique used. The result is a parameterizable model that can be re-driven after each simulation."
+      ],
+      "figures": [
+        {
+          "src": "compressor/impeller-cad",
+          "alt": "Orange CAD model of a centrifugal impeller with curved blades around a central hub.",
+          "caption": "Impeller model with equation-defined blades."
+        },
+        {
+          "src": "compressor/blade-geometry",
+          "alt": "Grey CAD view of impeller blades with the orange hub visible between them.",
+          "caption": "Blade geometry study."
+        }
+      ]
+    },
+    {
+      "heading": "Simulation feedback",
+      "paras": [
+        "ANSYS Fluent simulations calculated the volumetric flow rate and visualized vortices within the volute, showing fluid stagnation and churning. Those results went back into CAD: I manipulated the design variables and resolved flaws in the parameterizable model."
+      ],
+      "figures": [
+        {
+          "src": "compressor/assembly-cad",
+          "alt": "Blue CAD model of the compressor housing and volute with a small motor below.",
+          "caption": "Assembly model of the housing and volute."
+        },
+        {
+          "src": "compressor/top-view-cad",
+          "alt": "Top view of the blue compressor housing with the impeller visible at the center.",
+          "caption": "Top view of the housing."
+        }
+      ]
+    },
+    {
+      "heading": "Design decisions and trade-offs",
+      "bullets": [
+        "Refining the blade equation improved geometric control, with a minor effect on performance.",
+        "Reviewing the model exposed design constraints I had not captured: zero-thickness geometry, conditions that cannot be manufactured, and insufficient design constraints overall."
+      ],
+      "figures": [
+        {
+          "src": "compressor/exploded-view",
+          "alt": "Exploded grey CAD view showing the volute cover, impeller, and housing base separated along the axis.",
+          "caption": "Exploded view of the assembly."
+        }
+      ]
+    },
+    {
+      "heading": "Verification",
+      "paras": [
+        "I validated the compressor with an anemometer. Measured airflow was within **±20%** of the predicted 24.55 CFM. That is a wide band, and the gap had identifiable causes: excessive shaft friction and PLA deformation, plus dimensional variation and unintended surface friction from 3D printing."
+      ],
+      "figures": [
+        {
+          "src": "compressor/printed-prototype",
+          "alt": "Green 3D-printed compressor housing held in a hand, with wires attached.",
+          "caption": "The printed PLA prototype."
+        }
+      ]
+    },
+    {
+      "heading": "Lessons and next steps",
+      "paras": [
+        "The main lesson was the importance of design for manufacture. Next steps would be functional tolerancing, material selection for the application, and better drafting techniques."
+      ]
+    }
+  ],
+  "tools": ["SOLIDWORKS", "ANSYS Fluent", "3D printing in PLA", "Anemometer"]
+}

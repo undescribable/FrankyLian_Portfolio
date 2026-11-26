@@ -1,0 +1,57 @@
+{
+  "slug": "washer-suspension",
+  "title": "Washer suspension design and dynamic balancing",
+  "short": "GD&T schemes and technical specifications for three suspension subsystems, plus counterweight sizing to hold the sub-washer at its operating tilt. The design phase closed with a theoretical factor of safety above 2.",
+  "lede": "A front-load washer tub has to stay in its operating position while the drum spins. I designed suspension components, specified them with GD&T, and sized the counterweights that set the balance.",
+  "cats": ["design"],
+  "org": "GE Appliances, a Haier Company",
+  "role": "Mechanical Engineering Intern, Design",
+  "dates": "August – November 2025",
+  "status": "Design phase complete",
+  "thumb": {"stat": {"value": "> 2", "label": "Theoretical factor of safety at the end of the design phase", "kind": "calculated"}},
+  "ownership": "I developed the GD&T schemes and technical specifications for three suspension subsystems, released the drawings in Creo, and managed part configurations in Windchill PLM. I also did the counterweight calculations and placement described below.",
+  "results": [
+    {"value": "> 2", "label": "Factor of safety at the end of the design phase", "kind": "calculated"},
+    {"value": "3", "label": "Suspension subsystems with GD&T schemes (ASME Y14.5-2009) and technical specifications", "kind": "reported"},
+    {"value": "All models", "label": "Consistent centroid placement relative to the center of rotation", "kind": "calculated"}
+  ],
+  "sections": [
+    {
+      "heading": "Problem and constraints",
+      "paras": [
+        "Two connected objectives. The suspension had to control vibration and system dynamics while keeping the tub within its required operating position. Separately, the sub-washer had to be held at its required operating tilt, which is set by where mass sits relative to the center of rotation."
+      ]
+    },
+    {
+      "heading": "Approach: suspension",
+      "bullets": [
+        "Designed suspension components using machine-elements principles and factor-of-safety analysis.",
+        "Developed drawings and schematics with GD&T for manufacturing and assembly, with schemes to ASME Y14.5-2009 and technical specifications for three subsystems.",
+        "Evaluated spring placement and load paths to optimize the tub-to-spring interaction and system behavior."
+      ]
+    },
+    {
+      "heading": "Approach: dynamic balancing",
+      "bullets": [
+        "Calculated counterweight mass, density, and placement.",
+        "Determined weight locations that achieve the required center of gravity and tilt angle.",
+        "Calibrated the counterweights around the rotating assembly."
+      ]
+    },
+    {
+      "heading": "Verification",
+      "paras": [
+        "Suspension performance improvements were validated against legacy designs through testing, to support design decisions. The factor of safety above 2 is a theoretical result from the design-phase analysis, not a test measurement."
+      ]
+    },
+    {
+      "heading": "Results",
+      "bullets": [
+        "Completed the design phase with a theoretical factor of safety above 2.",
+        "Established suspension geometry and component designs that meet the required operating conditions.",
+        "Achieved consistent centroid placement relative to the center of rotation across all models."
+      ]
+    }
+  ],
+  "tools": ["Creo (drawing release)", "Windchill PLM", "GD&T, ASME Y14.5-2009", "Machine-elements and factor-of-safety analysis", "Testing against legacy designs"]
+}

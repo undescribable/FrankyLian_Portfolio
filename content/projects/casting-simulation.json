@@ -1,0 +1,81 @@
+{
+  "slug": "casting-simulation",
+  "title": "Casting simulation and porosity prediction",
+  "short": "Calibrating MAGMASOFT casting simulations against physical die-casting results so that predicted porosity and fluidity can be trusted, and fewer physical trials are needed.",
+  "lede": "Casting simulation is cheap but low fidelity; CT scanning of cast parts is high fidelity but expensive. This research ties the two together. Ongoing.",
+  "cats": ["simulation", "manufacturing"],
+  "org": "Advanced Casting Research Center, The Ohio State University",
+  "role": "Undergraduate Research Assistant",
+  "dates": "March 2026 – present",
+  "status": "Ongoing",
+  "thumb": {"src": "casting/simulation-output", "alt": ""},
+  "ownership": "My role is the simulation side of the workflow below: calibrating MAGMASOFT against experimental results, building and modifying mold CAD, and configuring and running the cases. I also collect and analyze die-casting data that supports calibrating the machine-learning defect models, which are broader research efforts.",
+  "results": [
+    {"value": "30+", "label": "Metal-casting simulations generated across multiple material conditions", "kind": "reported"},
+    {"value": "13+", "label": "Material systems where material-property and database issues were debugged", "kind": "reported"},
+    {"value": "11+", "label": "Materials simulated to evaluate solidification, fluidity, and porosity formation", "kind": "reported"}
+  ],
+  "sections": [
+    {
+      "heading": "Problem and background",
+      "paras": [
+        "MAGMASOFT predictions must be calibrated against physical die-casting results before the simulated porosity and fluidity behavior can be trusted. Without calibration, a simulation can look convincing and still disagree with the part that comes out of the die."
+      ]
+    },
+    {
+      "heading": "Objective",
+      "paras": ["Develop a simulation and data workflow that:"],
+      "bullets": [
+        "Correlates MAGMASOFT results with experimental casting data to validate simulation settings.",
+        "Evaluates porosity and fluidity across multiple casting conditions.",
+        "Reduces reliance on physical casting trials."
+      ]
+    },
+    {
+      "heading": "Where my work sits",
+      "paras": [
+        "The research group's workflow starts from process parameters: metal temperature, mold temperature, shot profile, composition, and vacuum level. Those drive both die-casting trials and casting simulations. Simulation results are low fidelity and cheap; CT scanning of cast parts is high fidelity and expensive. Bayesian optimization with a surrogate model links the two, and AI/ML models (random forest, neural network, logistic regression) predict porosity. My work is the casting-simulation block."
+      ],
+      "figures": [
+        {
+          "src": "casting/research-workflow",
+          "variants": [["casting/research-workflow-700", 700]],
+          "alt": "Flow diagram of the casting research workflow. Process parameters feed die-casting trials and casting simulations. Simulation gives low-fidelity, cheap results; CT scanning gives high-fidelity, expensive results. Bayesian optimization with a surrogate model connects them, and AI and machine-learning models predict porosity.",
+          "caption": "Research workflow as presented in my portfolio catalog. The casting-simulation block is my work; the CT scanning and AI/ML porosity models are broader research efforts."
+        }
+      ]
+    },
+    {
+      "heading": "Approach and responsibilities",
+      "bullets": [
+        "Calibrate MAGMASOFT simulations against experimental results and troubleshoot discrepancies with real-world casting behavior.",
+        "Build and modify CAD models of molds and internal mold features.",
+        "Configure and execute simulations for gravity casting and high-pressure die casting (HPDC).",
+        "Collect and analyze experimental die-casting data to validate simulations and calibrate machine-learning models for casting defect prediction.",
+        "Prepare metal samples for electron microscopy and tensile testing to characterize material and casting performance."
+      ],
+      "figures": [
+        {
+          "src": "casting/cast-test-geometry",
+          "alt": "A die-cast test casting with several parallel bars extending from a common base.",
+          "caption": "A cast test geometry from the experimental trials."
+        },
+        {
+          "src": "casting/simulation-output",
+          "alt": "MAGMASOFT result visualization: a colored contour field across a flat cavity with parallel bar features, and a speckled cylindrical feature on top.",
+          "caption": "A MAGMASOFT result visualization from the calibration work."
+        }
+      ]
+    },
+    {
+      "heading": "Progress and results",
+      "bullets": [
+        "Generated 30+ metal-casting simulations across multiple material conditions.",
+        "Debugged material-property and database issues for 13+ material systems.",
+        "Calibration and validation against experimental results are ongoing, so there is no final result to report yet."
+      ]
+    }
+  ],
+  "tools": ["MAGMASOFT", "Gravity casting and HPDC process setups", "Mold CAD", "Experimental die-casting data analysis", "Sample preparation for electron microscopy and tensile testing"],
+  "note": "Counts are as stated in my resume and portfolio catalog at the time of writing; the work is ongoing."
+}

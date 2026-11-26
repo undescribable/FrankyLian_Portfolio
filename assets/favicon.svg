@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FL monogram">
+  <rect width="64" height="64" fill="#15181b"/>
+  <rect y="54" width="64" height="10" fill="#d9531e"/>
+  <text x="32" y="40" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="26" font-weight="600" fill="#f4f3ef">FL</text>
+</svg>

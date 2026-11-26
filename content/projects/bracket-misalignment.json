@@ -1,0 +1,72 @@
+{
+  "slug": "bracket-misalignment",
+  "title": "Bracket misalignment at assembly",
+  "short": "A deformed retaining bracket stopped a pilot dishwasher build. Scan-to-CAD and tolerance stack-up data supported the drawing revisions that cut the assembly failure rate from 3% to 0.5%.",
+  "lede": "A pilot dishwasher build hit a no-build condition when a bracket that retains a critical component arrived deformed. I supported the investigation with scan-to-CAD inspection data and tolerance stack-up studies.",
+  "cats": ["quality"],
+  "org": "GE Appliances, a Haier Company",
+  "role": "Mechanical Engineering Intern, Quality",
+  "dates": "July 2026",
+  "status": "Complete",
+  "thumb": {"src": "bracket/scan-initial", "alt": ""},
+  "ownership": "I supported the root-cause investigation. My part was the dimensional analysis and tolerance stack-up studies on the affected assembly and its surrounding components, and presenting the scan and tolerance data to engineering. The findings supported the drawing revisions that followed; the revisions themselves were a team outcome.",
+  "results": [
+    {"value": "3% → 0.5%", "label": "Assembly failure rate after drawing revisions", "kind": "reported"},
+    {"value": "≈ $150K", "label": "Approximate savings attributed to the resulting improvement", "kind": "reported"},
+    {"value": "15 parts", "label": "Random sample scanned to evaluate shipping behavior"}
+  ],
+  "sections": [
+    {
+      "heading": "Problem and constraints",
+      "paras": [
+        "A pilot dishwasher build encountered an assembly error: a deformed bracket retaining a critical component created a **no-build condition**. The objective was to identify the root cause and contributing factors, and to prevent the failure from recurring."
+      ],
+      "figures": [
+        {
+          "src": "bracket/bracket-as-found",
+          "alt": "A deformed sheet-metal retaining bracket photographed on a plain background.",
+          "caption": "The deformed bracket from the pilot build."
+        }
+      ]
+    },
+    {
+      "heading": "Approach",
+      "paras": [
+        "In an assembly like this, each part's dimensional variation stacks with that of its mating parts. A scan-to-CAD comparison shows where real parts depart from nominal geometry, and a tolerance stack-up shows how much of that departure the assembly can absorb before a part no longer seats."
+      ],
+      "bullets": [
+        "Took a random sample of **15 parts** to evaluate shipping behavior.",
+        "Used PolyWorks 3D scan-to-CAD analysis to compare the physical parts against nominal CAD, using datums, surface profile, perpendicularity, and concentricity.",
+        "Ran dimensional analysis and tolerance stack-up studies on the affected assembly and the surrounding components."
+      ]
+    },
+    {
+      "heading": "Verification",
+      "paras": [
+        "Scans at the initial condition and at resolution were checked against the same drawing callout: a surface profile of 0.035 to datums A, B and C. The initial scan shows the bracket outside that tolerance and tilted away from its nominal 90 degree angle; the resolution scan is within it."
+      ],
+      "figures": [
+        {
+          "src": "bracket/scan-initial",
+          "alt": "PolyWorks inspection view of a bent sheet-metal bracket overlaid on its nominal CAD, with a red Surface Profile 2 report showing a measured value of 0.183 and a Z angle of 84.741 degrees against 90.000 nominal.",
+          "caption": "Initial scan. Surface profile 0.183 against the 0.035 callout (fail); Z angle 84.741 against 90.000 nominal."
+        },
+        {
+          "src": "bracket/scan-resolution",
+          "alt": "PolyWorks inspection view of the bracket at resolution, with a Surface Profile 2 report showing a measured value of 0.017 and a Z angle of 89.352 degrees against 90.000 nominal.",
+          "caption": "Resolution scan. Surface profile 0.017 (pass); Z angle 89.352 against 90.000 nominal."
+        }
+      ]
+    },
+    {
+      "heading": "Results",
+      "bullets": [
+        "Presented the scan and tolerance data in a simplified engineering review to communicate the failure mechanism and root cause.",
+        "The findings supported drawing revisions that reduced assembly failures from 3% to 0.5%, contributing to approximately $150K in savings.",
+        "The work also supported broader hardware evaluation, qualification testing, and engineering validation for cost, quality, and product performance improvements."
+      ]
+    }
+  ],
+  "tools": ["PolyWorks 3D scan-to-CAD", "GD&T: datums, surface profile, perpendicularity, concentricity", "Tolerance stack-up analysis"],
+  "note": "Figures and numbers are as presented in my reviewed and approved portfolio catalog. Savings are approximate and reported, not independently audited."
+}
